@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Como Sacar Valores a Receber — Guia Simples e Colorido</title>
+  <meta name="description" content="Guia autoexplicativo para consultar e sacar Valores a Receber do Banco Central (SVR)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;
+      --bg2:#111827;
+      --text:#0b1020;
+      --muted:#475569;
+      --line:rgba(255,255,255,.15);
+      --card:#ffffff;
+      --grad1:#22c55e; /* verde */
+      --grad2:#06b6d4; /* ciano */
+      --grad3:#a855f7; /* roxo */
+      --grad4:#f59e0b; /* laranja */
+      --ok:#16a34a;
+      --warn:#d97706;
+      --danger:#dc2626;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    body{background:linear-gradient(135deg,var(--bg),var(--bg2)) fixed;color:#e5e7eb}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 44px}
+
+    /* HEADER */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0 24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:14px;background:conic-gradient(from 180deg at 50% 50%,var(--grad1),var(--grad2),var(--grad3),var(--grad4),var(--grad1));display:grid;place-items:center;color:#0b1020;font-weight:800;border:2px solid #fff}
+    .title{font-size:22px;font-weight:800}
+    .chip{border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:12px;backdrop-filter:blur(6px)}
+
+    /* HERO */
+    .hero{border:1px solid var(--line);background:linear-gradient(120deg,rgba(34,197,94,.15),rgba(6,182,212,.12) 50%,rgba(168,85,247,.12));border-radius:20px;padding:26px}
+    .hero h1{margin:0 0 6px;font-size:34px;line-height:1.15}
+    .hero p{margin:0;color:#cbd5e1}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid #10b981;background:#10b981;color:#06261a;padding:12px 16px;border-radius:14px;font-weight:700;text-decoration:none}
+    .btn.alt{border-color:#7c3aed;background:#7c3aed;color:#fff}
+
+    /* GRID */
+    .grid{display:grid;gap:18px;margin-top:22px}
+    @media (min-width:900px){.grid{grid-template-columns:1.2fr .8fr}}
+
+    .card{background:var(--card);color:var(--text);border-radius:18px;border:1px solid #e5e7eb;box-shadow:0 10px 30px rgba(0,0,0,.10);padding:18px}
+    .card h3{margin:0 0 8px;font-size:20px}
+    .card p{margin:8px 0;color:#334155}
+
+    /* STEPS */
+    .steps{display:grid;gap:14px;margin-top:12px}
+    .step{border:1px solid #e5e7eb;border-radius:16px;padding:14px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:linear-gradient(180deg,#fff, #fbfbff)}
+    .num{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#06261a;font-weight:800;display:grid;place-items:center}
+    .step h4{margin:0 0 4px;font-size:16px}
+    .mini{font-size:12px;color:#64748b}
+
+    .note{display:flex;gap:10px;padding:12px;border:1px dashed #94a3b8;border-radius:14px;background:#f8fafc;color:#0b1020}
+    .note .icon{font-size:18px}
+
+    .warn{border-color:#facc15;background:#fffbea}
+    .ok{border-color:#86efac;background:#f0fdf4}
+
+    /* FAQ */
+    .faq details{border:1px solid #e5e7eb;border-radius:14px;padding:12px;background:#fff;margin:10px 0}
+    .faq summary{cursor:pointer;font-weight:700}
+
+    footer{margin-top:34px;color:#cbd5e1;border-top:1px solid var(--line);padding-top:18px;font-size:12px}
+    code{background:#0f172a;color:#a7f3d0;border-radius:6px;padding:2px 6px}
+    .list{padding-left:18px}
+    .list li{margin:6px 0;color:#334155}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">VR</div>
+        <div>
+          <div class="title">Guia Colorido — Valores a Receber</div>
+          <div class="mini" style="color:#93c5fd">Autoexplicativo • Sem campos para preencher</div>
+        </div>
+      </div>
+      <span class="chip">Conteúdo informativo</span>
+    </header>
+
+    <section class="hero">
+      <h1>Descubra e saque seus <span style="background:linear-gradient(90deg,var(--grad1),var(--grad2),var(--grad3));-webkit-background-clip:text;background-clip:text;color:transparent">Valores a Receber</span></h1>
+      <p>Tudo o que você precisa saber para consultar e, quando disponível, receber o dinheiro esquecido em instituições financeiras — rápido e com segurança.</p>
+      <div class="cta">
+        <a class="btn" href="https://valoresareceber.bcb.gov.br" target="_blank" rel="noopener" aria-label="Abrir site oficial do Banco Central">Acessar site oficial</a>
+        <a class="btn alt" href="#passos">Ver passo a passo</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h3>O que é o SVR (Sistema de Valores a Receber)?</h3>
+        <p>É o serviço do Banco Central do Brasil que reúne créditos que podem estar no seu nome (pessoa física) ou no CNPJ de empresas (pessoa jurídica): contas encerradas com saldo, tarifas cobradas indevidamente, cotas de consórcio, entre outros.</p>
+        <ul class="list">
+          <li>Consulta gratuita, online e segura.</li>
+          <li>Disponível para CPF e CNPJ.</li>
+          <li>Quando houver saldo, o sistema informa como receber.</li>
+        </ul>
+        <div class="note ok" role="status"><div class="icon">✅</div><div>Você não precisa pagar ninguém para “liberar” valores. O processo oficial é gratuito.</div></div>
+      </section>
+
+      <aside class="card">
+        <h3>Segurança (anti-golpe)</h3>
+        <div class="note warn"><div class="icon">⚠️</div><div>O Banco Central não envia links por WhatsApp/Telegram, não liga oferecendo liberação e não cobra taxas.</div></div>
+        <ul class="list">
+          <li>Acesse apenas: <code>valoresareceber.bcb.gov.br</code>.</li>
+          <li>Nunca informe senhas, códigos de SMS ou dados de cartão.</li>
+          <li>Desconfie de promessas de “liberação imediata” mediante Pix.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section id="passos" class="card">
+      <h3>Passo a passo (simples)</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h4>Acesse o site oficial</h4>
+            <p>Entre em <a href="https://valoresareceber.bcb.gov.br" target="_blank" rel="noopener">valoresareceber.bcb.gov.br</a> e clique em <strong>“Consulte valores a receber”</strong>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h4>Faça a consulta</h4>
+            <p>Informe CPF (ou CNPJ) e data de nascimento (ou abertura da empresa) para saber se há valores disponíveis.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h4>Entre com sua conta gov.br</h4>
+            <p>Se houver valores, faça login com sua conta gov.br (de preferência nível prata ou ouro) para ver os detalhes e solicitar a retirada.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <div>
+            <h4>Escolha a forma de recebimento</h4>
+            <p>O próprio sistema indica a opção disponível:</p>
+            <ul class="list">
+              <li><strong>Via Pix</strong>: confirme/valide a chave Pix e finalize.</li>
+              <li><strong>Direto com a instituição</strong>: o site mostra o nome do banco/financeira e explica como contatar para receber.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">5</div>
+          <div>
+            <h4>Guarde o comprovante</h4>
+            <p>Após solicitar, salve o protocolo exibido na tela. Acompanhe pelo próprio sistema ou pelo atendimento da instituição.</p>
+          </div>
+        </div>
+      </div>
+      <div class="note"><div class="icon">⏱️</div><div>O prazo para o dinheiro cair depende da instituição e do método escolhido.</div></div>
+    </section>
+
+    <section class="card">
+      <h3>Quem pode usar?</h3>
+      <ul class="list">
+        <li><strong>Pessoa Física</strong>: consulta com CPF e data de nascimento.</li>
+        <li><strong>Pessoa Jurídica</strong>: consulta com CNPJ e data de abertura.</li>
+        <li>Herança: verifique no sistema as orientações específicas indicadas para o caso.</li>
+      </ul>
+    </section>
+
+    <section class="card faq">
+      <h3>Dúvidas frequentes</h3>
+      <details>
+        <summary>Precisa pagar alguma taxa?</summary>
+        <p>Não. O serviço do Banco Central é gratuito.</p>
+      </details>
+      <details>
+        <summary>Não tenho conta gov.br. E agora?</summary>
+        <p>A consulta inicial é aberta. Para ver detalhes/solicitar o saque, será pedido login no gov.br. É rápido criar/elevar o nível.</p>
+      </details>
+      <details>
+        <summary>Posso receber por Pix?</summary>
+        <p>Sim, quando a opção estiver disponível para seu caso. Caso contrário, siga as instruções para contato com a instituição.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva?</summary>
+        <p>Varia de acordo com a instituição e o tipo de retirada escolhido.</p>
+      </details>
+      <details>
+        <summary>É só para pessoas físicas?</summary>
+        <p>Não. Empresas (CNPJ) também podem ter valores a receber.</p>
+      </details>
+    </section>
+
+    <section class="card" style="background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(6,182,212,.12),rgba(168,85,247,.12));border-color:#dbeafe">
+      <h3>Resumo final — zero complicação</h3>
+      <ul class="list">
+        <li>Use apenas o site oficial: <code>valoresareceber.bcb.gov.br</code>.</li>
+        <li>Consulta grátis para CPF e CNPJ.</li>
+        <li>Achou valores? Faça login gov.br e siga as instruções de saque.</li>
+        <li>Preferencialmente receba via Pix. Se não houver Pix, fale com a instituição indicada.</li>
+        <li>Nada de pagamentos ou “taxas de liberação”.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>Esta é uma página <strong>informativa e independente</strong>, sem vínculo com o Banco Central do Brasil ou instituições financeiras. Utilize sempre os canais oficiais.</div>
+    </footer>
+  </div>
+</body>
+</html>
